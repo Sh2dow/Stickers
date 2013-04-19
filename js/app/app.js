@@ -88,6 +88,7 @@ document.oncontextmenu = function() {return false;};
   raise: function (e) {
     if (!$(this.el).hasClass('sticker-active')) {
 		var max_z = 0;
+		$('.sticker-active').find('textarea').blur()
 		$('.sticker-active').removeClass('sticker-active');
 		$('.sticker').each(function () {   
 		var curr_z = parseInt($(this).css('z-index'));
@@ -97,7 +98,6 @@ document.oncontextmenu = function() {return false;};
 		});
 	$(this.el).css({ 'z-index': max_z + 10 });
 	$(this.el).addClass('sticker-active')
-	$(this.el).find('textarea').focus()	
 	}
   },
   /**

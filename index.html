@@ -5,11 +5,10 @@
 	<title>Stickers</title>
 	<link rel="stylesheet" href="css/main.css" />
 	<!-- libs -->
-	<script src="js/lib/jquery-1.9.1.js"></script>
-	<script src="js/lib/json2.js"></script>  
+	<script src="js/lib/jquery-2.0.0.min.js"></script>
 	<script src="js/lib/jquery-ui.js"></script>
+	<script src="js/lib/json2.js"></script>  
 	<script src="js/lib/underscore.js"></script>
-	<script src="js/lib/backbone.js"></script>
 	<script src="js/lib/backbone.js"></script>
 	<script src="js/lib/backbone-localstorage.js"></script>
 	<script src="js/lib/backbone.application.js"></script>
@@ -19,14 +18,14 @@
 
 	<script id="sticker-template" type="text/html">
 		<div class="sticker-template">
-			<h1><%= title %></h1>
+			<%= title %>
 		<div class="sticker-close" />
 			<textarea/>
 		</div>
 	</script>
 </head>
 	<div id = "field">
-		Click to add Sticker
+		<h3>Click to add Sticker</h3>
 	</div>
 </body>
 </html>
